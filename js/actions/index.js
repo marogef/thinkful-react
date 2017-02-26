@@ -81,11 +81,19 @@ import * as reducers from './reducers/index';
 
 export default createStore(reducers.repositoryReducer);
 //
-//Add a file called js/store.js, and create and export a store that uses your reducer.
-//Create a small file to manually test your actions, reducer, and store.
-//
 
 
 
+
+//use ReactDOM.render to render the Game component into the <div>
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import RepositoryList from './components/game.js';
+
+document.addEventListener('DOMContentLoaded', () =>
+    ReactDOM.render( < RepositoryList / > , document.getElementById('repositoryName'))
+);
 
 //
